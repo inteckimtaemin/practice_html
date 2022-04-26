@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <img src="./images/tangerines.jpg" alt="레드향" title="레드향">
+    <div style="background-color: lightyellow;">
+    <fieldset>
+        <legend>상품 선택</legend>
+        <br>
+        <b>주문할 상품을 선택해 주세요</b><br>
+        <ul>
+            <label for="1"><li><input type="checkbox">선물용 3kg <input type="number" max="5" min="0" id="1"></label>개<sub>(최대 5개)</sub></li>
+            <label for="2"><li><input type="checkbox" checked>선물용 5kg <input type="number" max="3" min="0" value="1" id="2"></label>개<sub>(최대 3개)</sub></li>
+            <label for="3"><li><input type="checkbox">선물용 3kg <input type="number" max="5" min="0" id="3"></label>개<sub>(최대 5개)</sub></li>
+            <label for="4"><li><input type="checkbox">선물용 5kg <input type="number" max="3" min="0" id="4"></label>개<sub>(최대 3개)</sub></li>
+        </ul>
+        <b>포장 선택</b>
+        <ul>
+            <label for="r1"><li><input type="radio" id="r1"  name="r1">선물 포장</li></label>
+            <label for="r2"><li><input type="radio" id="r2" name="r1">선물 포장 안 함</li></label>
+
+        </ul>
+    </fieldset>
+    <fieldset style="background-color: lightyellow;">
+        <legend>배송 정보</legend>
+        <br>
+        <ul>
+            <li><label for="q">이름 <input type="text" id="q"></li></label>
+            <li><label for="w">배송 주소 <input type="text" id="w"></li></label>
+            <li><label for="e">이메일 <input type="email" id="e"></li></label>
+            <li><label for="r">연락처 <input type="tel"  id="r"></li></label>
+            <li><label for="t">배송 일정 <input type="date"  id="t"><sub>(주문일로부터 최소 3일 이후)</sub></li></label>
+            <li><label for="y">메모 <textarea name="note" cols="20" rows="5"  id="y"></textarea></li></label>
+        </ul>
+    </fieldset>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="취소하기">
+    <a href="./practice10.html" target="_blank"><input type="button" value="홈화면"></a>
+    </div>
+</body>
+</html>
